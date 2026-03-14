@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-     <link rel="stylesheet" href="stylesheets/site.css"/>
+    <link rel="stylesheet" href="stylesheets/site.css" />
 </head>
+
 <body>
 
     <header>
@@ -13,16 +15,16 @@
             <p>Notification</p>
         </div>
         <nav>
-             <!-- Anchor tags used for internal navigation -->
-                <a href="index.html">Home</a>
-                <a href="about_us.html">About Us</a>
-                <a href="contact_us.html">Contact Us</a>
+            <!-- Anchor tags used for internal navigation -->
+            <a href="index.html">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="contact_us.html">Contact Us</a>
         </nav>
     </header>
 
     <main>
-       <h1 style="color: cornflowerblue;">Contact Us</h1>
-        <hr/>
+        <h1 style="color: cornflowerblue;">Contact Us</h1>
+        <hr />
 
         <article>
             <h2 class="differentLookingText">Locations</h2>
@@ -58,34 +60,38 @@
             </table>
 
         </article>
-        
+
         <article>
             <h2 class="differentLookingtext weirdColor">General Inquiries</h2>
-            <form action="confirmation.html">
-                <label for="fullname">Name: *</label><br/>
-                <input required type="text" id="fullname" name="fullname"/>
-                <br/><br/>
-                <label for="email">Email Address: *</label><br/>
-                <input required type="email" id="email" name="emailaddress"/>
-                <br/><br/>
-                <label>Are you employed?</label><br/>
-                <input type="radio" value="Y" name="employed"/> Yes
-                <input type="radio" value="N" name="employed"/> No
-                <br/><br/>
-                <label for="inquiry">State your Inquiry *</label><br/>
+            <form action="confirmation.html" id="contactForm">
+                <label for="fullname">Name: *</label><br />
+                <input required type="text" id="fullname" name="fullname" />
+                <br /><br />
+                <label for="email">Email Address: *</label><br />
+                <input required type="email" id="email" name="emailaddress" />
+                <br /><br />
+                <label>Are you employed?</label><br />
+                <input type="radio" value="Y" name="employed" /> Yes
+                <input type="radio" value="N" name="employed" /> No
+                <br /><br />
+                <label for="inquiry">State your Inquiry *</label><br />
                 <textarea required cols="50" rows="10" maxlength="150" id="inquiry" name="inquiry"></textarea>
-                <br/><br/>
+                <br /><br />
                 <input type="submit" />
+                <button type="button" onclick="ClearForm()">Clear</button>
             </form>
         </article>
-        
+
     </main>
 
     <footer>
-         <br/><br/>
-            <a href="https://2026bts.com/">BTS</a>
-            <a href="https://en.wikipedia.org/wiki/BTS">Wikipedia</a>
+        <br /><br />
+        <a href="https://2026bts.com/">BTS</a>
+        <a href="https://en.wikipedia.org/wiki/BTS">Wikipedia</a>
     </footer>
 
+    <script src="scripts/site.js"></script>
+
 </body>
+
 </html>
