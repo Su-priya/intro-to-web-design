@@ -5,22 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css" />
     <link rel="stylesheet" href="stylesheets/site.css" />
 </head>
 
 <body>
-    <header>
-        <div id="banner">
-            <p>Notification</p>
+    <div id="header">
+        <div id="banner" class="bg-secondary text-white text-center">
+            <p>Random website notification</p>
         </div>
-        <nav>
-            <!-- Anchor tags used for internal navigation -->
-            <a href="index.html">Home</a>
-            <a href="about_us.html">About Us</a>
-            <a href="contact_us.html">Contact Us</a>
+        <nav class="navbar navbar-expand-lg" style="background-color: #c710c1;" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">BTS ARMY</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="about_us.html">About Us</a>
+                        <a class="nav-link" href="contact_us.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
         </nav>
-    </header>
-    <main>
+    </div>
+    <main class="container">
         <h1 style="color: cornflowerblue;">About Us</h1>
         <hr />
 
@@ -34,27 +46,88 @@
 
         <article>
             <h2>Wikipedia</h2>
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Born 1997</h5>
+                            <p class="card-text">Jungkook was born on 1997 September 1st</p>
+                            <a href="contact_us.html" class="btn btn-primary">More Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Birthplace Busan</h5>
+                            <p class="card-text">Birthplace is Busan, a province in South Korea</p>
+                            <a href="contact_us.html" class="btn btn-primary">Know More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">BTS BoyBand</h5>
+                            <p class="card-text">Occupation Singer, songwriter from 2013</p>
+                            <a href="contact_us.html" class="btn btn-primary">Big Hit Entertainment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <ul>
-                <li>Born 1997</li>
-                <li>Birthplace Busan, South Korea</li>
-                <li>Occupation Singer, songwriter</li>
-                <li>Years active 2013–present</li>
-                <li>Label Big Hit Entertainment</li>
-                <li>Associated acts BTS</li>
-            </ul>
         </article>
 
         <article>
             <h2>Popular Songs</h2>
-            <ol>
-                <li>My Time</li>
-                <li>Still With You</li>
-                <li>Euphoria</li>
-                <li>Begin</li>
-                <li>Stay</li>
-                <li>Seven</li>
-                <li><a href="contact_us.html">Golden Album</a></li>
-            </ol>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Euphoria
+                        </button>
+                    </h3>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>"Euphoria" is a celebrated 2018 solo track by BTS's Jungkook,</strong>  serving as the introduction to the Love Yourself: Answer album. Produced by DJ Swivel, this upbeat art-pop and future bass song focuses on pure, euphoric love. It is highly popular, 
+                            <code>.accordion-body</code>, with record-setting streaming numbers for a K-pop B-side.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Still With You
+                        </button>
+                    </h3>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>"Still With You" is a soulful, jazzy R&B solo ballad by Jungkook of BTS,</strong>  released on June 5, 2020, for the BTS Festa and officially released on streaming platforms in July 2023. The song was written during the COVID-19 pandemic to express longing for fans (ARMY). 
+                            <code>.accordion-body</code>It was produced by Jungkook and Pdogg.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Seven
+                        </button>
+                    </h3>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>"Seven" is the debut solo digital single by BTS member Jung Kook,</strong>  released on July 14, 2023. It is a high-energy UK garage-inspired song featuring rapper Latto, with lyrics about wanting to be with a lover every day of the week. The track broke multiple records, 
+                            <code>.accordion-body</code>becoming the fastest song to reach one billion streams on Spotify by US BTS ARMY.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </article>
 
     </main>
@@ -65,7 +138,10 @@
         <a href="https://en.wikipedia.org/wiki/BTS">Wikipedia</a>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@4.0.0/dist/jquery.min.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/site.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@4.0.0/dist/jquery.min.js"></script> -->
 
 </body>
 
